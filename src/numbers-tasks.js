@@ -49,8 +49,10 @@ function getCircleCircumference(radius) {
  *  10, 0  => 5
  *  -3, 3  => 0
  */
-function getAverage(/* value1, value2 */) {
-  throw new Error('Not implemented');
+function getAverage(value1, value2) {
+  const result = (value1 + value2) / 2;
+  if (result === Number.POSITIVE_INFINITY) return Number.MAX_VALUE;
+  return result;
 }
 
 /**
